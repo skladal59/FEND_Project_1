@@ -1,0 +1,87 @@
+/* img formatting */
+
+img {
+  margin: 0 10px 10px 0;
+  max-width: 300px;
+  /* Among other things, allows the image to shrink as the viewport
+  width decreases. Otherwise, image stays at 300px no matter what */
+  width: calc((100% - 10px)/2);
+}
+
+/*
+img:first-of-type {
+  margin-top: 0;
+}
+
+img:last-of-type {
+  margin-top: 0;
+}
+*/
+/* end image formatting */
+
+
+/* inline block the major sections */
+
+.hero, .portfolio1, .portfolio2, .portfolio3 {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* padding at bottom of portforlio sections */
+.portfolio1, .portfolio2, .portfolio3 {
+  margin-bottom: 5px;
+}
+
+.content {
+  /* flex allows content to line up in a single row */
+  display: flex;
+  /* wrap allows content to wrap to subsequent rows as the viewport shrinks */
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 1px;
+  /* pad contect with 10px white spoace */
+  padding-left: 10px;
+}
+
+/* wholoe lot of nothing */
+.description {
+  /* right now, don't see the use of inline block...
+  as viewport decreases, content acts no differently
+  when there is no inline-block */
+}
+
+/* h1 - h6 have default styling values
+   Set h2 margins to zero */
+h2 {
+/*  margin: 0;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em; */
+}
+/* end of nothing */
+
+/* borders for major sections */
+img, h2, main, .content, .hero, .portfolio1, .portfolio2, .portfolio3, p, footer {
+  border-style: solid;
+  border-width: 1px;
+}
+/* end borders */
+
+/* footer formatting */
+footer {
+  border-top: 1px solid #E0E0E0;
+/*  padding: 1em; */
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
+/* end footer formatting */
